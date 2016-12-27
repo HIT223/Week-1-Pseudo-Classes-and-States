@@ -10,11 +10,51 @@ p{
 }
 
 /*
+	Blockquote styles
+*/
+blockquote{
+	margin: 16px 0 32px 0;
+	padding: 30px;
+	background-color: #039BE5;
+	color: white;
+	border-radius: 3px;
+	position: relative; /* Allows us to position the speach bubble triangle relative to the blockquote*/
+}
+
+blockquote::after{
+	content: ''; /* Without declearing content, ::before and ::after do no render*/
+	display: block;
+	position: absolute;
+	top: 100%; /* top: 100% is more reliable than bottom: 0 in this case as it will work regardless of the height of our triangle*/
+	left: 24px;
+
+	/* CSS triangles [http://apps.eky.hk/css-triangle-generator/]*/
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 24px 24px 0 0;
+	border-color: #039BE5 transparent transparent transparent;
+}
+
+cite{ /* Lets put cite on a new line, remove italic styles*/
+	margin-top: 14px;
+	display: block;
+	font-style: normal;
+}
+
+/* add a dash before cite*/
+
+cite::before{
+	content: '- ';
+}
+
+
+/*
 	Default link styles
 	Order of selectors is important,
 	normal, :hover, :focus, then :active
 */
 
 a{
-
+	/* todo: add link styles, try experimenting with colours, and text-decoration*/
 }
