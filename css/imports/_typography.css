@@ -57,4 +57,17 @@ cite::before{
 
 a{
 	/* todo: add link styles, try experimenting with colours, and text-decoration*/
+	color: #0277BD;
+	text-decoration: none;
+	transition: color 100ms, background-color 100ms;
+}
+
+a:hover,a:focus{
+	text-decoration: underline;
+}
+
+a:active{
+	background-color: #0277BD;
+	color: white;
+	text-decoration: underline;
 }

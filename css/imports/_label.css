@@ -8,6 +8,12 @@
 */
 .label::before{
 	/*Todo: style your labels*/
+	position: absolute;
+	top: -16px;
+	left: 0;
+	font-size: 12px;
+	font-weight: normal;
+	color: #757575;
 }
 
 /*
@@ -15,9 +21,22 @@
 	add the missing values
 */
 h1.label::before{
-	content: 'Heading 1:';
+	content: 'Heading 1';
 }
-h2.label::before{}
-h3.label::before{}
+h2.label::before{
+	content: 'Heading 2';
+}
+h3.label::before{
+	content: 'Heading 3';
+}
+h4.label::before{
+	content: 'Heading 4';
+}
+h5.label::before{
+	content: 'Heading 5';
+}
+h6.label::before{
+	content: 'Heading 6';
+}
 
 /*Todo: add missing h4 & h5 selectors*/
