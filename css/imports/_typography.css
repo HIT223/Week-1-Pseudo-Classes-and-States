@@ -8,3 +8,13 @@ p{
 	font-size: 16px;
 	line-height: 28px;
 }
+
+/*
+	Default link styles
+	Order of selectors is important,
+	normal, :hover, :focus, then :active
+*/
+
+a{
+
+}
