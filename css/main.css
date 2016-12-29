@@ -7,5 +7,5 @@
 /*
 	Our imports
 */
-@import 'components/typography.css';
-@import 'components/label.css';
+@import 'lib/typography.css';
+@import 'lib/label.css';
