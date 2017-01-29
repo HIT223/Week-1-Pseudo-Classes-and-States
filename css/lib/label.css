@@ -1,23 +1,30 @@
-.label{
-	position: relative;
+.label {
+  position: relative;
 }
+
 
 /*
 	Label appearance
 	try positioning the ::before as `absolute`, setting `top` and `left` to `0`, and playing with font size/color/weight to adjust your labels;
 */
-.label::before{
-	/*Todo: style your labels*/
+
+.label::before {
+  /*Todo: style your labels*/
 }
+
 
 /*
 	Labels for headings,
 	add the missing values
 */
-h1.label::before{
-	content: 'Heading 1:';
+
+h1.label::before {
+  content: 'Heading 1:';
 }
-h2.label::before{}
-h3.label::before{}
+
+h2.label::before {}
+
+h3.label::before {}
+
 
 /*Todo: add missing h4 & h5 selectors*/
